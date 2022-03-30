@@ -24,7 +24,6 @@ describe('Testes de Favirite Pokemons', () => {
     userEvent.click(detailsLink);
 
     const checkPokemon = screen.getByRole('checkbox', { name: 'Pokémon favoritado?' });
-    console.log(checkPokemon);
     userEvent.click(checkPokemon);
 
     history.push('/favorites');
